@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700;900&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Poppins';
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+
+.container {
+    padding: 1.6rem 3.2rem;
+}
+
+.page {
+    display: grid;
+    grid-template-areas: "header header header" "main main main"  "main main main" "footer footer footer";
+    grid-template-rows: max-content 1fr max-content;
+    height: 100vh;
+    
+}
+
+.nav-bar {
+    padding: 1.5rem 6rem;
+}
+
+
+header {
+    grid-area: header;
+    border-bottom: 1px solid #0187a7;
+    width: 100%;
+    
+}
+
+nav{
+    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+}
+
+#img-mobile {
+    display: none;
+}
+
+.nav-list ul  {
+    display: flex;
+    gap: 5.5rem;    
+    color: white;
+    list-style: none;
+    font-weight: 500;
+    margin-right: 14rem;
+}
+
+.nav-list li a {
+    width: 100;
+    display: block;
+    font-size: 1.6rem;
+    color: #0187a7;
+}
+
+.nav-list li a:hover {
+    color: #035a70;
+    transition: 0.8s;
+
+}
+
+.nav-item {
+
+    color: #0187a7;
+    
+}
+
+.nav-link {
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #0187a7;
+
+}
+
+.login-button button {
+    border: 0;
+    background-color: #0187a7;
+    padding: 1.0rem 1.5rem;
+    border-radius: 1.5rem;
+}
+
+.login-button button a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 1.9rem;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    display: none;
+}
+
+
+
+
+
+main {
+    grid-area: main;
+    overflow-y: scroll;
+}
+
+.principal-article {
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    display: grid;
+    margin-top: 1.5rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    color: #0187a7;
+    text-align: justify;
+}
+
+.principal-article article {
+    padding: 5rem;
+
+}
+
+
+
+.principal-article button {
+    font-size: 1.8rem;
+    border: none;
+    padding: 1.5rem;
+    border-radius: 0.8rem;
+    background-color: #0187a7;
+    color: white;
+    margin-top: 1.5rem;
+
+}
+
+
+.principal-article button:hover {
+    background-color: #035a70;
+    transition: 1s;
+}
+
+.principal-article article:not(:last-child) {
+    border-right: 1px solid #0187a7;
+}
+
+section {
+    background-color: #0B8FAC;
+
+}
+
+
+footer {
+    grid-area: footer;
+    border-top: 1px solid #0187a7;
+    padding: 1.6rem;
+    font-size: 1.5rem;
+    color:#0187a7;
+    font-weight: 500;
+    text-align: center;
+}
+@media screen and (max-width: 894px) {
+
+    .nav-link {
+        color:  #0187a7;
+    }
+
+
+    .nav-bar {
+        padding: 1.5rem;
+    
+    }
+
+    .nav-item {
+        display: none;
+
+    }
+
+    .login-button {
+        display: none;
+    }
+
+    .mobile-menu-icon {
+        display: block;
+    }
+
+    .mobile-menu-icon button {
+        background-color: #0187a7;
+        border: none;
+        cursor: pointer;
+        border-radius: .5rem;
+    }
+
+    .mobile-menu ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+
+    .mobile-menu .nav-item {
+        display: block;
+        padding-top: 1.2rem;
+
+    }
+
+    .mobile-menu .login-button {
+        display: block;
+        padding: 1rem 2rem;
+    }
+    .mobile-menu .login-button button {
+        width: 100%;
+    }
+
+
+    .open {
+        display: block;
+    }
+
+    .nav-list ul {
+        margin-right: 0;
+    }
+
+    main {
+        margin-top: 2.5rem;
+    }
+
+    .slider {
+        display: none;
+    }
+
+
+    .container {
+        max-width: 760px;
+    }
+
+
+    .principal-article {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: -0.5rem;
+    }
+
+    .principal-article article {
+        font-size: 1.5rem;
+        padding: 0.1rem;
+       
+    }
+
+    .principal-article article:not(:last-child) {
+        border-right: none;
+    }
+    
+    
+    .principal-article button {
+        font-size: 1.5rem;
+        border: none;
+        padding: 0.9rem;
+        border-radius: 0.8rem;
+        background-color: #0187a7;
+        color: white;
+        margin-top: 1.5rem;
+
+
+}
+
+    #img-mobile {
+        
+        margin: 0 auto;
+        display: block;
+        width: 350px;
+        height: 200px;
+    }
+
+    
+}

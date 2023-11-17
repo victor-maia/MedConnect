@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedConnect+</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slide.css" />
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all/min.css">
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <nav class="nav-bar">
+          <div class="logo">
+            <img src="assets/img/logo1.svg" alt="" />
+          </div>
+
+          <div class="nav-list">
+            <ul>
+              <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+              <li class="nav-item"><a class="nav-link" href="agendar.html">Agendar Consulta</a></li>
+              <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+              <li class="nav-item"><a class="nav-link" href="unidades.html">Unidades</a></li>
+              <li class="nav-item"><a class="nav-link" href="quem_somos.html">Quem somos</a></li>
+              <li class="nav-item"><a class="nav-link" href="fale_conosco.html">Fale conosco</a></li>
+            </ul>
+          </div>
+
+          <div class="login-button">
+            <button><a>Entrar</a></button>
+          </div>
+
+          <div class="mobile-menu-icon">
+            <button onclick="menuShow()">
+              <img src="assets/img/menu_white_36dp (1).svg" />
+            </button>
+          </div>
+        </nav>
+
+        <div class="mobile-menu">
+          <ul>
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link" href="agendar.html">Agendar Consulta</a></li>
+            <li class="nav-item"><a class="nav-link" href="servicos.html">Serviços</a></li>
+            <li class="nav-item"><a class="nav-link" href="unidades.html">Unidades</a></li>
+            <li class="nav-item"><a class="nav-link" href="quem_somos.html">Quem somos</a></li>
+            <li class="nav-item"><a class="nav-link" href="fale_conosco.html">Fale conosco</a></li>
+          </ul>
+
+          <div class="login-button">
+            <button><a>Entrar</a></button>
+          </div>
+        </div>
+      </header>
+      <main>
+
+        <img src="assets/img/slide_1.jpg" id="img-mobile">
+
+        <section>
+
+          <div class="slider">
+            <div class="slides">
+              <!--Botão do slide-->
+              <input type="radio" name="radio-btn" id="radio1" />
+              <input type="radio" name="radio-btn" id="radio2" />
+              <input type="radio" name="radio-btn" id="radio3" />
+              <input type="radio" name="radio-btn" id="radio4" />
+              <!--Fim botão do slide-->
+
+              <!-- Imagens do slide-->
+              <div class="slide first">
+                <img src="assets/img/slide_1.jpg" alt="Imagem 1" />
+              </div>
+              <div class="slide">
+                <img src="assets/img/slide_2.jpg" alt="Imagem 2" />
+              </div>
+              <div class="slide">
+                <img src="assets/img/slide_3.jpg" alt="Imagem 3" />
+              </div>
+              <!-- Fim imagens do slide-->
+
+              <!--Navigation Auto-->
+              <div class="navigation-auto">
+                <div class="auto-btn1"></div>
+                <div class="auto-btn2"></div>
+                <div class="auto-btn3"></div>
+              </div>
+            </div>
+
+            <div class="manual-navigation">
+              <label for="radio1" class="manual-btn"></label>
+              <label for="radio2" class="manual-btn"></label>
+              <label for="radio3" class="manual-btn"></label>
+            </div>
+          </div>
+        </section>
+
+
+        <div class="principal-article">
+            <article>
+                <p>Bem-vindo à <b>MedConnect+</b> O Seu Portal de Saúde Confiável. <br> Na MedConnect+, estamos comprometidos em fornecer a você o acesso mais fácil e conveniente aos melhores cuidados médicos. <br> Com agendamento de consultas simplificado, informações abrangentes sobre especialidades médicas e uma equipe dedicada de profissionais de saúde, estamos aqui para colocar sua saúde em primeiro lugar. Explore nosso site e comece sua jornada rumo a uma vida mais saudável hoje mesmo.</p>
+            </article>
+
+            <article>   
+               <p> <b>Plano de Saúde MedConnect - Plano Essencial</b> <br>
+                Cobertura Abrangente: Inclui consultas de Clínico Geral, exames de rotina e acesso a nossa rede de especialistas. <br>
+                Atendimento Prioritário: Consultas marcadas com agilidade para sua comodidade. <br>
+                Telemedicina Inclusa: Consultas online disponíveis para maior conveniência. <br>
+                Valor Mensal: Apenas R$129,99. <br> <button>Saiba mais</button> </p>
+            </article>
+
+            <article>
+                <p>
+                    <b>Priorize a sua saúde e bem-estar hoje mesmo!</b> Não deixe para amanhã o cuidado que você merece agora. Agendar uma <br> consulta médica regular é o primeiro passo para garantir que você esteja no caminho certo para uma vida mais saudável<br>
+                    <a href="agendar.html"><button>Agende sua consulta agora</button></a>
+                </p>
+            </article>
+        </div>
+      </main>
+
+      <footer>Copyright © 2023 - Todos os direitos reservados - Victor Luis Carneiro Maia</footer>
+    </div>
+    <script src="menu.js"></script>
+    <script src="slide.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
