@@ -170,6 +170,93 @@ footer {
     font-weight: 500;
     text-align: center;
 }
+
+.form-box {
+    margin: 0 auto;
+    max-width: 85.0rem;
+
+    border-radius: 8px;
+    height: 83.5rem;
+    margin-top: 2.5rem;
+
+}
+
+fieldset {
+    border: none;
+
+}
+
+fieldset legend {
+    font-size: 3.0rem;
+    margin-top: -1rem;
+    margin-bottom: rem;
+    color: #0B8FAC;
+    font-weight: 600;
+}
+
+.fieldset-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.1rem;
+ 
+}
+
+.input-wrapper {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+
+.input-wrapper input, select {
+    border-radius: .5rem;
+    width: 60.0rem;
+    padding: 0.9rem;
+    border: #ccccd6 1px solid;
+    background-color: #fafafc;
+}
+
+.input-wrapper select {
+    width: 62.0rem;
+}
+
+.input-wrapper label {
+    font-size: 1.5rem;
+    color: #0187a7;
+    margin-bottom: 0.8rem;
+    font-weight: 500;
+}
+
+
+
+input:focus {
+    outline: 0;
+}
+
+
+.input-wrapper span {
+    color: red;
+    display: none;
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+
+.fieldset-wrapper button {
+    margin-top: 2rem;
+    padding: 1rem;
+    width: 25%;
+    border-radius: 0.8rem;
+    background-color: #0187a7;
+    color: white;
+    border: 0;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+
+
 @media screen and (max-width: 894px) {
 
     .nav-link {
@@ -285,4 +372,93 @@ footer {
     }
 
     
+    .form-box {
+        margin: 0 auto;
+        max-width: 55.0rem;
+        border: 0;
+        border-radius: 8px;
+        height: 83.5rem;
+        margin-top: rem;
+    
+    }
+    
+    fieldset {
+        border: none;
+    
+    }
+    
+    fieldset legend {
+        font-size: 2.0rem;
+        margin-top: 2.8rem;
+        margin-bottom: 2.5rem;
+        color: #0B8FAC;
+        font-weight: 600;
+    }
+    
+    .fieldset-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.1rem
+    }
+    
+    .input-wrapper {
+        display: flex;
+        flex-direction: column;
+       
+    }
+    
+    
+    
+    .input-wrapper input, select {
+        border-radius: .5rem;
+        width: 35.0rem;
+        padding: 0.3rem;
+        border: #ccccd6 1px solid;
+        background-color: #fafafc;
+    }
+    
+    .input-wrapper select {
+        width: 36.0rem;
+    }
+    
+    .input-wrapper label {
+        font-size: 1.2rem;
+        color: #0187a7;
+        margin-bottom: 0.8rem;
+        font-weight: 500;
+    }
+    
+    
+    
+    input:focus {
+        outline: 0;
+    }
+    
+    
+    .input-wrapper span {
+        color: red;
+        display: none;
+        font-size: 0.9rem;
+        margin-top: 0.5rem;
+    }
+    
+    .fieldset-wrapper button {
+        margin-top: 2rem;
+        padding: 2rem;
+        width: 25%;
+        border-radius: 0.8rem;
+        background-color: #0187a7;
+        color: white;
+        border: 0;
+        font-size: 1.5rem;
+    
+    }
+
+
+
+
+
 }
+
+

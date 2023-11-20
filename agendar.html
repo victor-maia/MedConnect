@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedConnect+</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slide.css" />
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all/min.css" />
+
+    <script src="scheduler_form.js" defer></script>
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <nav class="nav-bar">
+          <div class="logo">
+            <img src="assets/img/logo1.svg" alt="" />
+          </div>
+
+          <div class="nav-list">
+            <ul>
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="agendar.html">Agendar Consulta</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="servicos.html">Serviços</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="unidades.html">Unidades</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="quem_somos.html">Quem somos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="fale_conosco.html">Fale conosco</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="login-button">
+            <button><a>Entrar</a></button>
+          </div>
+
+          <div class="mobile-menu-icon">
+            <button onclick="menuShow()">
+              <img src="assets/img/menu_white_36dp (1).svg" />
+            </button>
+          </div>
+        </nav>
+
+        <div class="mobile-menu">
+          <ul>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="agendar.html">Agendar Consulta</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicos.html">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="unidades.html">Unidades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="quem_somos.html">Quem somos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="fale_conosco.html">Fale conosco</a>
+            </li>
+          </ul>
+
+          <div class="login-button">
+            <button><a>Entrar</a></button>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <div class="form-box" >
+          <form action="gravar.jsp" id="form_schedule">
+            <fieldset>
+              <div class="fieldset-wrapper">
+                <legend>Agendar Consulta</legend>
+                <div class="input-wrapper">
+                  <label for="name">Nome </label>
+                  <input type="text" name="name" id="name" class="required" oninput="nameValidate()"/>
+                  <span class="span-required">Nome deve ter no mínimo 3 caracteres</span>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="email">Email</label>
+                  <input type="email" name="email" id="email" class="required" oninput="emailValidate()">
+                  <span class="span-required">Digite um endereço de e-mail válido</span>
+                 </div>
+
+
+                <div class="input-wrapper">
+                  <label for="cpf">CPF <span>Oi</span></label>
+                  <input type="text" name="cpf" id="cpf" class="required" oninput="cpfValidate()"/>
+                  <span class="span-required">Digite um CPF válido (somente números)</span>
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="gender">Sexo</label>
+                  <select name="gender" id="gender" class="required" oninput="genderValidate()">
+                      <option value="selectGender">Selecione seu sexo</option>
+                      <option value="male">Masculino</option>
+                      <option value="female">Feminino</option>
+                  </select>
+                  <span class="span-required">Selecione um gênero</span>
+              </div>
+              
+
+                <div class="input-wrapper">
+                  <label for="dateOfBirth">Data de Nascimento</label>
+                  <input type="date" name="dateOfBirth" id="dateOfBirth" />
+                </div>
+                <div class="input-wrapper">
+                  <label for="medicalSpeciality">Especialidade Médica</label>
+                  <select name="medicalSpeciality" id="medicalSpeciality">
+                    <option value="clinicoGeral">Clínico Geral</option>
+                    <option value="cardiologia">Cardiologia</option>
+                    <option value="dermatologia">Dermatologia</option>
+                    <option value="ginecoObstetricia">
+                      Ginecologia e Obstetrícia
+                    </option>
+                    <option value="ortopedia">Ortopedia</option>
+                    <option value="pediatria">Pediatria</option>
+                    <option value="oftalmologia">Oftalmologia</option>
+                    <option value="otorrinolaringologia">
+                      Otorrinolaringologia
+                    </option>
+                    <option value="neurologia">Neurologia</option>
+                
+                  </select>
+                  
+                </div>
+
+                <div class="input-wrapper">
+                  <label for="dateofAppointment">Data da Consulta</label>
+                  <input type="date" name="dateofAppointment" id="dateofAppointment" />
+                </div>
+
+                
+
+                <button type="submit" form="form_schedule">Agendar</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+      </main>
+
+      <footer>
+        Copyright © 2023 - Todos os direitos reservados - Victor Luis Carneiro
+        Maia
+      </footer>
+    </div>
+    <script src="menu.js"></script>
+    <script src="slide.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
+</html>
