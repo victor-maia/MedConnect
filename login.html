@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Medconnect+ - Login</title>
+    <script src="login_form.js" defer></script>
+</head>
+<body>
+    <main id="login-page">
+        <div class="cardlogin">
+
+            <form class="login-form" action="login.jsp">
+
+                <div class="logo">
+                    <a href="index.html"><img src="assets/img/logo1.svg" alt="" /></a>
+                </div>
+                <fieldset>
+                 
+                    <div class="fieldset-wrapper">
+                        <div class="input-wrapper">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" class="required" oninput="emailLoginValidate()">
+                            <span class="span-required">Digite um endereço de e-mail válido</span>
+                        </div>
+
+                        <div class="input-wrapper">
+                            <label for="password">Senha</label>
+                            <input type="senha" name="senha" id="senha" class="required">
+                        </div>
+
+                    
+                        
+                        <button type="submit" form="login-form">Logar</button>
+                    </div>
+
+                </fieldset>
+
+                <p>Não possui uma conta? <a href="register.html">Cadastra-se</a><p>
+            </form>
+
+            
+        </div> 
+    </main>
+      
+</body>
+</html>
